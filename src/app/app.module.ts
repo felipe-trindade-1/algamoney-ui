@@ -19,6 +19,7 @@ import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LancamentosCadastroComponent } from './lancamentos-cadastro/lancamentos-cadastro.component';
+import { PessoasCadastroComponent } from './pessoas-cadastro/pessoas-cadastro.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { LancamentosCadastroComponent } from './lancamentos-cadastro/lancamentos
     LancamentosPesquisaComponent,
     PessoasPesquisaComponent,
     NavbarComponent,
-    LancamentosCadastroComponent
+    LancamentosCadastroComponent,
+    PessoasCadastroComponent
   ],
   imports: [
     BrowserAnimationsModule,
