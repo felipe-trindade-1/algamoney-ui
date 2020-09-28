@@ -11,6 +11,7 @@ import {CalendarModule} from 'primeng/calendar';
 import {SelectButtonModule} from 'primeng/selectbutton';
 import {DropdownModule} from 'primeng/dropdown';
 import {InputNumberModule} from 'primeng/inputnumber';
+import {InputMaskModule} from 'primeng/inputmask';
 
 import {CurrencyMaskModule} from 'ng2-currency-mask';
 
@@ -44,7 +45,9 @@ import { PessoasCadastroComponent } from './pessoas-cadastro/pessoas-cadastro.co
     SelectButtonModule,
     DropdownModule,
     InputNumberModule,
-    CurrencyMaskModule
+    CurrencyMaskModule,
+    InputMaskModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
