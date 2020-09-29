@@ -23,12 +23,12 @@
                 <input pInputText type="text" name="descricao" ngModel #descricao="ngModel" required minlength="5">
 
                 <div *ngIf="descricao.hasError('required') && descricao.dirty"
-                class="p-message-error">
-                    Informe uma descrição
+                class="p-message p-message-error">
+                     Informe uma descrição
                 </div>
                 <div *ngIf="descricao.hasError('minlength') && descricao.dirty"
-                class="p-message-error">
-                    Mínimo de {{ descricao.errors.minlength.requiredLength }} caractéres. Você digitou apenas {{ descricao.errors.minlength.actualLength }} 
+                class="p-message p-message-error">
+                     Mínimo de {{ descricao.errors.minlength.requiredLength }} caractéres. Você digitou apenas {{ descricao.errors.minlength.actualLength }} 
                 </div>
             </div> 
             <div class="p-col-12 p-md-3 p-fluid">
