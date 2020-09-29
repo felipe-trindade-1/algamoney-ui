@@ -22,18 +22,15 @@
                 <label>Descrição {{ descricao.errors | json }}</label>
                 <input pInputText type="text" name="descricao" ngModel #descricao="ngModel" required minlength="5">
 
-                <div *ngIf="descricao.hasError('required') && descricao.dirty"
-                class="p-message p-message-error">
-                     Informe uma descrição
-                </div>
-                <div *ngIf="descricao.hasError('minlength') && descricao.dirty"
-                class="p-message p-message-error">
+                <app-message [control]="descricao" error="required" text="Informe uma DESCRICAO"></app-message>
+
+                <div *ngIf="descricao.hasError('minlength') && descricao.dirty" class="p-message p-message-error">
                      Mínimo de {{ descricao.errors.minlength.requiredLength }} caractéres. Você digitou apenas {{ descricao.errors.minlength.actualLength }} 
                 </div>
             </div> 
             <div class="p-col-12 p-md-3 p-fluid">
                 <label>Valor</label>
-                <input pInputText type="text" placeholder="0,00" currencyMask [options]="{prefix:'R$',thousands:'.', decimal:',', allowNegative: false}"/>
+                <input pInputText type="text" placeholder="0,00" name="valor" currencyMask [options]="{prefix:'R$',thousands:'.', decimal:',', allowNegative: false}" ngModel />
             </div>  
             <div class="p-col-12 p-md-6 p-fluid">
                 <label>Categoria</label>
