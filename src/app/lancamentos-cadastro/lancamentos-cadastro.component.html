@@ -28,7 +28,7 @@
                 </div>
                 <div *ngIf="descricao.hasError('minlength') && descricao.dirty"
                 class="p-message p-message-error">
-                    Mínimo de 5 caractéres
+                    Mínimo de {{ descricao.errors.minlength.requiredLength }} caractéres
                 </div>                
             </div> 
             <div class="p-col-12 p-md-3 p-fluid">
